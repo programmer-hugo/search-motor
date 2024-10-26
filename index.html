@@ -143,41 +143,41 @@
   </footer>
 
   <script>
-    document.getElementById("searchForm").addEventListener("submit", function(event) {
-      event.preventDefault();
-      const query = document.getElementById("query").value;
-      const searchEngine = document.getElementById("searchEngine").value;
+  document.getElementById("searchForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const query = document.getElementById("query").value;
+    const searchEngine = document.getElementById("searchEngine").value;
 
-      let url;
-      switch (searchEngine) {
-        case "google":
-          url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-          break;
-        case "bing":
-          url = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
-          break;
-        case "yahoo":
-          url = `https://search.yahoo.com/search?p=${encodeURIComponent(query)}`;
-          break;
-        case "baidu":
-          url = `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`;
-          break;
-        case "duckduckgo":
-          url = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
-          break;
-        case "yandex":
-          url = `https://yandex.com/search/?text=${encodeURIComponent(query)}`;
-          break;
-        case "ask":
-          url = `https://www.ask.com/web?q=${encodeURIComponent(query)}`;
-          break;
-        case "quora":
-          url = `https://www.quora.com/search?q=${encodeURIComponent(query)}`;
-          break;
-      }
+    let url;
+    switch (searchEngine) {
+      case "google":
+        url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        break;
+      case "bing":
+        url = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
+        break;
+      case "yahoo":
+        url = `https://search.yahoo.com/search?p=${encodeURIComponent(query)}`;
+        break;
+      case "baidu":
+        url = `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`;
+        break;
+      case "duckduckgo":
+        url = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
+        break;
+      case "yandex":
+        url = `https://yandex.com/search/?text=${encodeURIComponent(query)}`;
+        break;
+      case "ask":
+        url = `https://www.ask.com/web?q=${encodeURIComponent(query)}`;
+        break;
+      case "quora":
+        url = `https://www.quora.com/search?q=${encodeURIComponent(query)}`;
+        break;
+    }
 
-      window.open(url, "_blank");
-    });
-  </script>
+    window.location.href = url;  // Cambiado para abrir en la misma pestaña
+  });
+</script>
 </body>
 </html>
