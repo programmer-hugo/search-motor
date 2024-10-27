@@ -100,6 +100,37 @@
     footer a:hover {
       text-decoration: underline;
     }
+    .quick-access {
+      margin-top: 2rem;
+    }
+    .quick-access h2 {
+      color: #48bb78;
+      margin-bottom: 1rem;
+    }
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+    .quick-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+      background-color: #2d3748;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .quick-link:hover {
+      background-color: #4a5568;
+    }
+    .quick-link img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -137,6 +168,35 @@
       <option value="ask">Ask</option>
       <option value="quora">Quora</option>
     </select>
+    <div class="quick-access">
+      <h2>Accesos Directos</h2>
+      <div class="quick-links">
+        <a href="https://www.google.com" class="quick-link">
+          <img src="https://www.google.com/favicon.ico" alt="Google">
+          <span>Google</span>
+        </a>
+        <a href="https://www.youtube.com" class="quick-link">
+          <img src="https://www.youtube.com/favicon.ico" alt="YouTube">
+          <span>YouTube</span>
+        </a>
+        <a href="https://www.facebook.com" class="quick-link">
+          <img src="https://www.facebook.com/favicon.ico" alt="Facebook">
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.twitter.com" class="quick-link">
+          <img src="https://www.twitter.com/favicon.ico" alt="Twitter">
+          <span>Twitter</span>
+        </a>
+        <a href="https://www.instagram.com" class="quick-link">
+          <img src="https://www.instagram.com/favicon.ico" alt="Instagram">
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.linkedin.com" class="quick-link">
+          <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn">
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
   </main>
   <footer>
     <p>Inspirado en <a href="https://programmer-hugo.github.io/about-me/" target="_blank">Hugo Programmer</a></p>
