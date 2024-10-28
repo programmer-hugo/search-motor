@@ -41,6 +41,11 @@
     .oculto {
       display: none;
     }
+    .center-grid {
+    display: grid;
+    place-items: center; /* Centra tanto horizontal como verticalmente */
+    height: 100vh; /* Ajusta la altura si quieres centrar en toda la pantalla */
+    }
     main {
       max-width: 800px;
       margin: 2rem auto;
@@ -158,6 +163,7 @@
         </svg>
       </button>
     </form>
+    <section class="center-grid">
     <select id="searchEngine" class="search-input">
       <option value="google">Google</option>
       <option value="bing">Bing</option>
@@ -197,6 +203,7 @@
         </a>
       </div>
     </div>
+    </section>
   </main>
   <footer>
     <p>Inspirado en <a href="https://programmer-hugo.github.io/about-me/" target="_blank">Hugo Programmer</a></p>
